@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="1.0 extracto" default="Crear extracto.jar">
+    <description> Genera el jar de la extracto </description>
+	<!-- variables -->
+	<property name="base_extracto" location=""/>
+	<property name="destino_extracto" location="..\orquestador\frontend\extracto.jar"/>
+	<!--   extractoar   -->
+    <target name="Crear extracto.jar" description="crea el extracto.jar">
+    	<jar destfile="${destino_extracto}"  basedir="${base_extracto}\bin" manifest="${base_extracto}\MANIFEST.MF"/>
+    </target>
+</project>
+

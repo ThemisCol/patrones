@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="1.0 vehicle" default="Crear vehicle.jar">
+    <description> Genera el jar de la GUI </description>
+	<!-- variables -->
+	<property name="base_vehicle" location=""/>
+	<property name="destino_vehicle" location="..\orquestador\frontend\vehicle.jar"/>
+	<!--   guiar   -->
+    <target name="Crear vehicle.jar" description="crea el vehicle.jar">
+    	<jar destfile="${destino_vehicle}"  basedir="${base_vehicle}\bin" manifest="${base_vehicle}\MANIFEST.MF"/>
+    </target>
+</project>
+
