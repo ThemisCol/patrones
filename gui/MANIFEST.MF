@@ -1,5 +1,0 @@
-Manifest-Version: 1.0
-
-Name: COMPONENTE
-nombre: smite.connection.IEntrada
-clase: smite.ui.gui

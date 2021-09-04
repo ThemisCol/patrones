@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- =======================Orquestador -Sandro-========================== -->
+<project name="1.4 Orquestador" default="Crear orquestador.jar">
+    <description> Genera el jar del Orquestador </description>
+	<!-- variables -->
+	<property name="dir_api" location=""/>
+	<property name="base_orquestador" location=""/>
+	<!-- orquestar -->
+    <target name="Crear orquestador.jar" description="crea el orquestador.jar">
+    	<jar destfile="orquestador.jar"  basedir="${base_orquestador}">
+        <fileset dir="${dir_api}"/>
+            <manifest>
+                <attribute name="Main-Class" value="smite.main.orquestador"/>
+            </manifest>
+        </jar>
+    </target>
+</project>
+

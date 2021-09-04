@@ -3,7 +3,7 @@ package smite.ui;
 import smite.connection.IEntrada;
 import smite.connection.ISalida;
 
-public class gui implements IEntrada, ISalida {
+public class Gui implements IEntrada, ISalida {
 
 	@Override
 	public void enviarData() {
@@ -16,5 +16,5 @@ public class gui implements IEntrada, ISalida {
 		// TODO Auto-generated method stub
 		
 	}
-
+	
 }
