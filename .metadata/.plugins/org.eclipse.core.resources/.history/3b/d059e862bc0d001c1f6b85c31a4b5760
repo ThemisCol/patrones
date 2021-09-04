@@ -1,0 +1,7 @@
+package smite.ui;
+
+
+
+public class gui implements IEntrada, ISalida {
+
+}

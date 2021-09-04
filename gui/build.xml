@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="1.0 gui" default="Crear gui.jar">
+    <description> Genera el jar de la GUI </description>
+	<!-- variables -->
+	<property name="base_gui" location=""/>
+	<property name="destino_gui" location="..\orquestador\frontend\gui.jar"/>
+	<!--   guiar   -->
+    <target name="Crear gui.jar" description="crea el gui.jar">
+    	<jar destfile="${destino_gui}"  basedir="${base_gui}\bin" manifest="${base_gui}\MANIFEST.MF"/>
+    </target>
+</project>
+

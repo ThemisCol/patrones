@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ======================GUI -Sandro-=================================== -->
+<project name="1.3 GUI" default="Crear GUI.jar">
+    <description> Genera el jar de la GUI </description>
+	<!-- variables -->
+	<property name="base_man" location="D:\lenguajes\proyectos\java\componentes\gui"/>
+	<property name="base_gui" location="D:\lenguajes\IDEs\VSCode\data\user-data\User\workspaceStorage\fb465aa476a30e9a2c5942fe38bbcc3c\redhat.java\jdt_ws\gui_bf5b4c59"/>
+	<property name="destino_gui" location="D:\lenguajes\proyectos\java\componentes\orquestador\front\gui.jar"/>
+	<!--   guiar   -->
+    <target name="Crear GUI.jar" description="crea el GUI.jar">
+    	<jar destfile="${destino_gui}"  basedir="${base_gui}\bin" manifest="${base_man}\MANIFEST.MF"/>
+    </target>
+</project>
+
